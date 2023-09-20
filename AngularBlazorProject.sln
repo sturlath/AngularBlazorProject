@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34004.107
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "angularblazorproject.client", "angularblazorproject.client\angularblazorproject.client.esproj", "{AE459353-D9DD-450C-9A05-2BCB96AD6C49}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularBlazorProject.Server", "AngularBlazorProject.Server\AngularBlazorProject.Server.csproj", "{08F2B52D-FEE0-4C09-948A-BBFE55962756}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWrapperApp", "BlazorWrapperApp\BlazorWrapperApp.csproj", "{855F9F53-C0F5-4633-B3AC-FCFB9343C9AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AE459353-D9DD-450C-9A05-2BCB96AD6C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AE459353-D9DD-450C-9A05-2BCB96AD6C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AE459353-D9DD-450C-9A05-2BCB96AD6C49}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{AE459353-D9DD-450C-9A05-2BCB96AD6C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AE459353-D9DD-450C-9A05-2BCB96AD6C49}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AE459353-D9DD-450C-9A05-2BCB96AD6C49}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{08F2B52D-FEE0-4C09-948A-BBFE55962756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08F2B52D-FEE0-4C09-948A-BBFE55962756}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08F2B52D-FEE0-4C09-948A-BBFE55962756}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08F2B52D-FEE0-4C09-948A-BBFE55962756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{855F9F53-C0F5-4633-B3AC-FCFB9343C9AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{855F9F53-C0F5-4633-B3AC-FCFB9343C9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{855F9F53-C0F5-4633-B3AC-FCFB9343C9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{855F9F53-C0F5-4633-B3AC-FCFB9343C9AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
