@@ -9,7 +9,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddServerSideBlazor(options =>
 {
     options.RootComponents.RegisterCustomElement<Counter>("blazor-counter");
+    options.RootComponents.RegisterCustomElement<PowerBI>("blazor-powerbi");
 });
+
 
 var app = builder.Build();
 

@@ -1,0 +1,44 @@
+﻿﻿@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.JSInterop;
+@inject IJSRuntime JSRuntime
+
+<div id="reportContainer" style="width:100%;height:600px;max-width: 2000px"></div>
+
+<button @onclick="SayHello">Say Hello!</button>
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            try
+            {
+                var reportContainer = "reportContainer";
+                var accessToken = "TOKEN";
+                var embedUrl = "https://app.powerbi.com/reportEmbed"; 
+                var embedReportId = "YOUR_REPORT_ID"; 
+
+                var jsModule = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./assets/powerbiInterop.js");
+                await JSRuntime.InvokeVoidAsync("showMyPowerBIReport", reportContainer, accessToken, embedUrl, embedReportId);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+
+    private async Task SayHello()
+    {
+        try
+        {
+            var jsModule = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./assets/helloWorld.js");
+            await JSRuntime.InvokeVoidAsync("helloWorld");
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+}
